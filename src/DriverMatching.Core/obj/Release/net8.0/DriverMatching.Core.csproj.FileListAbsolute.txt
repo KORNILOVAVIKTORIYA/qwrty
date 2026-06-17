@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\bin\Release\net8.0\DriverMatching.Core.deps.json
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\bin\Release\net8.0\DriverMatching.Core.dll
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\bin\Release\net8.0\DriverMatching.Core.pdb
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\obj\Release\net8.0\DriverMatching.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\obj\Release\net8.0\DriverMatching.Core.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\obj\Release\net8.0\DriverMatching.Core.AssemblyInfo.cs
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\obj\Release\net8.0\DriverMatching.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\obj\Release\net8.0\DriverMatching.Core.dll
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\obj\Release\net8.0\refint\DriverMatching.Core.dll
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\obj\Release\net8.0\DriverMatching.Core.pdb
+C:\Users\user\Desktop\проект\DriverMatching\src\DriverMatching.Core\obj\Release\net8.0\ref\DriverMatching.Core.dll

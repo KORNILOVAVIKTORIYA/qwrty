@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>DriverMatching.Benchmarks.NearestDriversBenchmarks-20260617-210857</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.26200.8655)
+Unknown processor
+.NET SDK 10.0.301
+  [Host]     : .NET 8.0.28 (8.0.2826.26413), X64 RyuJIT AVX2
+  DefaultJob : .NET 8.0.28 (8.0.2826.26413), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method  </th><th>DriverCount</th><th>Mean     </th><th>Error  </th><th>StdDev </th><th>Median   </th><th>Ratio</th><th>RatioSD</th><th>Gen0</th><th>Gen1</th><th>Gen2</th><th>Allocated</th><th>Alloc Ratio</th>
+</tr>
+</thead><tbody><tr><td>BruteForceSort</td><td>100</td><td>1,732.8 ns</td><td>22.97 ns</td><td>21.49 ns</td><td>1,725.8 ns</td><td>1.00</td><td>0.02</td><td>0.1583</td><td>-</td><td>-</td><td>2672 B</td><td>1.00</td>
+</tr><tr><td>BruteForceHeap</td><td>100</td><td>680.7 ns</td><td>11.31 ns</td><td>12.58 ns</td><td>677.1 ns</td><td>0.39</td><td>0.01</td><td>0.0410</td><td>-</td><td>-</td><td>696 B</td><td>0.26</td>
+</tr><tr><td>GridRingSearch</td><td>100</td><td>735,439.7 ns</td><td>6,118.54 ns</td><td>5,723.28 ns</td><td>737,275.5 ns</td><td>424.49</td><td>6.00</td><td>-</td><td>-</td><td>-</td><td>10640 B</td><td>3.98</td>
+</tr><tr><td>KdTree</td><td>100</td><td>16,190.4 ns</td><td>456.99 ns</td><td>1,347.46 ns</td><td>16,643.8 ns</td><td>9.35</td><td>0.78</td><td>0.9460</td><td>0.0153</td><td>-</td><td>15928 B</td><td>5.96</td>
+</tr><tr><td>BruteForceSort</td><td>1000</td><td>26,653.2 ns</td><td>1,767.46 ns</td><td>5,211.40 ns</td><td>23,185.8 ns</td><td>1.04</td><td>0.28</td><td>1.4343</td><td>0.0916</td><td>-</td><td>24272 B</td><td>1.00</td>
+</tr><tr><td>BruteForceHeap</td><td>1000</td><td>5,966.6 ns</td><td>119.22 ns</td><td>332.35 ns</td><td>5,972.2 ns</td><td>0.23</td><td>0.04</td><td>0.0381</td><td>-</td><td>-</td><td>696 B</td><td>0.03</td>
+</tr><tr><td>GridRingSearch</td><td>1000</td><td>113,241.0 ns</td><td>1,851.68 ns</td><td>1,732.06 ns</td><td>113,237.1 ns</td><td>4.40</td><td>0.79</td><td>0.2441</td><td>-</td><td>-</td><td>4768 B</td><td>0.20</td>
+</tr><tr><td>KdTree</td><td>1000</td><td>423,052.0 ns</td><td>7,465.05 ns</td><td>6,982.81 ns</td><td>422,312.9 ns</td><td>16.45</td><td>2.97</td><td>7.8125</td><td>1.4648</td><td>-</td><td>138296 B</td><td>5.70</td>
+</tr><tr><td>BruteForceSort</td><td>10000</td><td>683,802.9 ns</td><td>12,188.85 ns</td><td>10,805.10 ns</td><td>679,625.8 ns</td><td>1.00</td><td>0.02</td><td>71.2891</td><td>71.2891</td><td>71.2891</td><td>240296 B</td><td>1.000</td>
+</tr><tr><td>BruteForceHeap</td><td>10000</td><td>39,871.1 ns</td><td>676.34 ns</td><td>632.65 ns</td><td>39,472.8 ns</td><td>0.06</td><td>0.00</td><td>-</td><td>-</td><td>-</td><td>696 B</td><td>0.003</td>
+</tr><tr><td>GridRingSearch</td><td>10000</td><td>12,784.3 ns</td><td>50.49 ns</td><td>47.23 ns</td><td>12,759.5 ns</td><td>0.02</td><td>0.00</td><td>0.1068</td><td>-</td><td>-</td><td>1808 B</td><td>0.008</td>
+</tr><tr><td>KdTree</td><td>10000</td><td>7,030,489.6 ns</td><td>61,878.12 ns</td><td>57,880.83 ns</td><td>7,024,804.7 ns</td><td>10.28</td><td>0.17</td><td>85.9375</td><td>85.9375</td><td>85.9375</td><td>1521486 B</td><td>6.332</td>
+</tr><tr><td>BruteForceSort</td><td>50000</td><td>4,036,128.9 ns</td><td>12,477.36 ns</td><td>9,741.50 ns</td><td>4,037,409.0 ns</td><td>1.000</td><td>0.00</td><td>304.6875</td><td>304.6875</td><td>304.6875</td><td>1200375 B</td><td>1.000</td>
+</tr><tr><td>BruteForceHeap</td><td>50000</td><td>195,870.7 ns</td><td>1,925.23 ns</td><td>1,607.65 ns</td><td>195,640.6 ns</td><td>0.049</td><td>0.00</td><td>-</td><td>-</td><td>-</td><td>696 B</td><td>0.001</td>
+</tr><tr><td>GridRingSearch</td><td>50000</td><td>1,456.1 ns</td><td>5.96 ns</td><td>5.57 ns</td><td>1,456.2 ns</td><td>0.000</td><td>0.00</td><td>0.0839</td><td>-</td><td>-</td><td>1432 B</td><td>0.001</td>
+</tr><tr><td>KdTree</td><td>50000</td><td>48,059,493.9 ns</td><td>691,742.82 ns</td><td>647,056.66 ns</td><td>48,083,454.5 ns</td><td>11.907</td><td>0.16</td><td>363.6364</td><td>272.7273</td><td>181.8182</td><td>7547239 B</td><td>6.287</td>
+</tr></tbody></table>
+</body>
+</html>
